@@ -18,7 +18,7 @@
 <!-- navbar -->
 <nav class="navbar bg-orange">
     <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
             <img src="img/logo.png" class="img-fluid" alt="">
         </a>
         <ul class="nav">
@@ -69,7 +69,7 @@
     </div>
   </div>
 </div>
-<div class="modal fade" id="signup" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+<div class="modal fade" id="signup" data-backdrop="static" data-keyboard="false" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-body border-top border-4 border-warning">
@@ -151,37 +151,66 @@
 <div class="container mt-2">
   <div class="content-boxs">
     <div class="row">
-      <div class="col-md-9 col-sm-12 mt-2">
+      <div class="col-md-8 col-sm-12 mt-2">
         <div class="row">
-          <!-- all article box -->
-      <div class="col-md-3 col-sm-12">
-        <nav aria-label="breadcrumb" dir="ltr" class="d-none d-md-block">
-            <ol class="breadcrumb fw-bold text-capitalize">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item " aria-current="page">tag name</li>
-            </ol>
-        </nav>
-        <div class="box mb-2 text-center">
-            <img src="img/user.png" class="img-fluid img-thumbnail rounded-circle" alt="">
-            <h3 class="fs-6">admin</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur
-                 adipisicing elit. Laboriosam, vero</p>
-            <div class="mb-3 ">
-                <span class="badge tags">lorem</span>
-                <span class="badge tags">lorem</span>
-                <span class="badge tags">lorem</span>
-            </div>
-            <a href="#" class="my-3 text-capitalize follow_btn ">follow</a> 
-            <div class="icon text-center my-4">
-                <i class="far fa-comment-dots"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-eye"></i>
-            </div>
+          <div class="col-12">
+            <nav aria-label="breadcrumb" dir="ltr" class="d-none d-md-block">
+              <ol class="breadcrumb fw-bold text-capitalize justify-content-end">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item " aria-current="page">tag name</li>
+              </ol>
+            </nav>
+          </div>
         </div>
-      </div>
+        <div class="row g-1">
+          <!-- all article box -->
+          <div class="col-md-4 col-sm-12">
+            <div class="box mb-2 text-center d-none d-md-block">
+                <img src="img/user.png" class="img-fluid img-thumbnail rounded-circle" alt="">
+                <a href="page_3.html"><h3 class="fs-6">admin</h3></a>
+                
+                <p>Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Laboriosam, vero</p>
+                <div class="mb-3 ">
+                    <span class="badge tags">lorem</span>
+                    <span class="badge tags">lorem</span>
+                    <span class="badge tags">lorem</span>
+                </div>
+                <a href="#" class="my-3 text-capitalize follow_btn ">follow</a> 
+                <div class="icon text-center my-4">
+                    <i class="far fa-comment-dots"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-eye"></i>
+                </div>
+            </div>
+            <div class="box d-block d-md-none p-3 mb-3">
+              <div class="top-user d-flex justify-content-between align-items-center">
+                <img src="img/user.png" class="img-fluid img-thumbnail rounded-circle" alt="">
+                <div class="text w-75 p-2">
+                  <a href="page_3.html"><h3 class="fs-6">admin</h3></a>
+                  <p>Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Laboriosam, vero</p>
+                </div>
+              </div>
+              <div class="mb-3 text-center">
+                <span class="badge tags">lorem</span>
+                <span class="badge tags">lorem</span>
+                <span class="badge tags">lorem</span>
+              </div>
+              <div class="bottom-user d-flex justify-content-between align-items-center px-3">
+                <a href="#" class="my-3 text-capitalize follow_btn ">follow</a> 
+                <div class="icon text-center my-4">
+                    <i class="far fa-comment-dots"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
       <!-- all article box -->
       <!-- posts box -->
-      <div class="col-md-9 col-sm-12 mt-5 mt-sm-2 mb-3">
+      <div class="col-md-8 col-sm-12 mb-3">
         <!-- post -->
         <div class="card mb-2">
           <div class="card-body p-0">
@@ -267,21 +296,27 @@
     <!-- posts box -->
         </div>
       </div>
-       <!-- tags box -->
-       <div class="col-md-3 col-sm-12 mt-2">
-        <div class="title-content mb-2">
-          <h2 class="title text-capitalize text-center text-sm-end fw-bold fs-4">tags</h2>
+        <!-- tags box -->
+        <div class="col-md-4 col-sm-12 mt-2">
+          <div class="title-content mb-2">
+            <h2 class="title text-capitalize text-center text-sm-end  fw-bold fs-4">tags</h2>
+          </div>
+          <div class="boxs mb-2 p-4 h-auto">
+            <span class="badge tags">lorem</span>
+            <span class="badge tags">Lorem ipsum</span>
+            <span class="badge tags">lorem</span>
+            <span class="badge tags">Lorem ipsum </span>
+            <span class="badge tags">Lorem ipsum dolor</span>
+            <span class="badge tags">lorem</span>
+          </div>
+          <div class="d-none d-md-block">
+            <span class="badge border border-secondary text-secondary">lorem</span>
+            <span class="badge border border-secondary text-secondary">lorem ipsum</span>
+            <span class="badge border border-secondary text-secondary">lorem</span>
+          </div>
+          
         </div>
-        <div class="boxs mb-2 p-4">
-          <span class="badge tags">lorem</span>
-          <span class="badge tags">Lorem ipsum</span>
-          <span class="badge tags">lorem</span>
-          <span class="badge tags">Lorem ipsum </span>
-          <span class="badge tags">Lorem ipsum dolor</span>
-          <span class="badge tags">lorem</span>
-        </div>
-      </div>
-      <!-- tags box -->
+        <!-- tags box -->
       
      
     </div>
