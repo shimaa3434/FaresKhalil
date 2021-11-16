@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Almarai', sans-serif;
 }
+
 
 :root{
     --bg-color: #ffb650;
@@ -176,11 +179,11 @@ a, a:hover{
 
 .info-content .info p{
     font-size: 0.8rem;
-    margin: 0 1rem;
+    margin: auto 5px;
 }
 .info-content .icons i{
-    font-size: 1rem;
-    margin: 0 0.7rem;
+    font-size: .8rem;
+    margin: auto 5px;
 }
 /* content */
 
@@ -205,6 +208,7 @@ a, a:hover{
 .linkedin{
     background: #197bbc;
 }
+
 .follow_btn{
     width: fit-content;
     padding: 5px 20px;
@@ -217,6 +221,13 @@ a, a:hover{
     border: none;
     border-bottom: 2px solid #ddd;
     border-radius: none;
+}
+@media (max-width: 991px){
+    .info-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
 
 @media (max-width: 768px){
@@ -240,5 +251,16 @@ a, a:hover{
     }
     .follow .sm-info{
         margin: 15px auto;
+    }
+    .info-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 490px){
+    .icons i, .info p{
+        font-size: 0.5rem !important;
     }
 }
