@@ -21,12 +21,12 @@
         <a class="navbar-brand" href="index.html">
             <img src="img/logo.png" class="img-fluid" alt="">
         </a>
-        <ul class="nav">
+        <ul class="nav mb-3">
             <li class="nav-item">
-                <div class="input-group mb-3 search-container">
+                <div class="input-group search-container">
                     <span class="input-group-text" id= 'search'><i class="fas fa-search"></i></span>
                     <input type="text" class="form-control d-none d-lg-block searchInput" placeholder="Search"  aria-describedby="search">
-                  </div>
+                </div>
             </li>
             <li class="nav-item">
               <a class="nav-link text-capitalize" href="#loginModal" data-bs-toggle="modal" >login</a>
@@ -36,11 +36,10 @@
 </nav>
 
 <!-- login modal -->
-
 <div class="modal fade" id="loginModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-dialog modal-dialog-centered ">
     <div class="modal-content">
-      <div class="modal-body border-top border-4 border-warning">
+      <div class="modal-body border-top border-4 border-warning rounded-2 shadow-sm">
         <h5 class="text-capitalize fw-bold mb-4">sign in via social media</h5>
         <div class="social-bnts text-center ">
           <a href="#" class="btn d-block btn-lg  facebook w-50 mb-2 mx-auto text-dark fw-bold"> <img src="img/Path 409@2x.png" width="20px" height="20px" class="img-fluid ms-2" alt=""> login</a>
@@ -73,6 +72,7 @@
 <div class="modal fade" id="signup" data-backdrop="static" data-keyboard="false" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
+    <div class="modal-body border-top border-4 border-warning rounded-2 shadow-sm">
       <h5 class="text-capitalize fw-bold mb-4">sign in via social media</h5>
       <div class="social-bnts text-center ">
         <a href="#" class="btn d-block btn-lg  facebook w-50 mb-2 mx-auto text-dark fw-bold"> <img src="img/Path 409@2x.png" width="20px" height="20px" class="img-fluid ms-2" alt=""> login</a>
@@ -109,12 +109,13 @@
       </div>
     </div>
   </div>
+  </div>
 </div>
 <!-- login modal -->
 <!-- navbar -->
 <!-- section hero -->
 <div class="container mt-2">
-    <div class="hero">
+    <div class="hero  rounded-2">
         <div class="row ">
             <div class="col-8 offset-2 mx-auto">
                 <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
@@ -161,23 +162,24 @@
         <!-- posts -->
         <div class="row mb-2 g-2">
           <div class="col-3">
-            <div class="box  h-100"></div>
+            <div class="box  h-100 rounded-2 shadow-sm"></div>
           </div>
           <div class="col-9">
              <!-- post -->
              <div class="card ">
-              <div class="card-body p-0">
+              <div class="card-body p-0 rounded-2 shadow-sm">
                 <div class="post">
                   <div class="mrak">
                     <i class="fas fa-microphone-alt"></i>
                   </div>
                   <div class="post-content">
                     <div class="auter d-flex align-items-center justify-content-between p-2" style="width: 90%;">
-                      <div class="d-flex align-items-center w-50">
-                        <img src="img/user.png" class="img-fluid img-thumbnail rounded-circle user" alt="">
-                        <a href="page_3.html"><p class="fw-bold admin">admin</p></a>
+                      <div class="d-flex align-items-center justify-content-start w-50 ">
+                        <i class="fas fa-user fa-2x p-2 rounded-circle border-dark text-dark border"></i>
+                        <!-- <img src="img/user.png" class="img-fluid img-thumbnail rounded-circle user" alt=""> -->
+                        <a href="page_3.html"><p class="fw-bold admin my-auto me-2">admin</p></a>
                       </div>
-                      <p class="d-block d-lg-none"><span class="badge tags" style="background: #fff7e9; border: none;">lorem</span></p>
+                      <p class="d-block d-lg-none"><span class="badge tags rounded-2 shadow-sm" style="background: #fff7e9; border: none;">lorem</span></p>
                     </div>
                     <div class="text-content px-2">
                       <a href="page_2.html"> <p class="lead fw-bold mb-1 lh-base p_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ipsam</p></a>
@@ -187,7 +189,7 @@
                       <div class="info d-flex justify-content-between align-items-center">
                         <p class="">21 September</p>
                         <p class="">5 min read</p>
-                        <p class="d-none d-lg-block"><span class="badge tags">lorem</span></p>
+                        <p class="d-none d-lg-block"><span class="badge tags rounded-2 shadow-sm">lorem</span></p>
                       </div>
                       <div class="icons">
                         <i class="far fa-comment-dots"></i>
@@ -206,23 +208,24 @@
         <!-- posts -->
         <div class="row mb-2 g-2">
           <div class="col-3">
-            <div class="box  h-100"></div>
+            <div class="box  h-100 rounded-2 shadow-sm"></div>
           </div>
           <div class="col-9">
-             <!-- post -->
-             <div class="card ">
-              <div class="card-body p-0">
+            <!-- post -->
+            <div class="card ">
+              <div class="card-body p-0 rounded-2 shadow-sm">
                 <div class="post">
                   <div class="mrak">
                     <i class="fas fa-microphone-alt"></i>
                   </div>
                   <div class="post-content">
                     <div class="auter d-flex align-items-center justify-content-between p-2" style="width: 90%;">
-                      <div class="d-flex align-items-center w-50">
-                        <img src="img/user.png" class="img-fluid img-thumbnail rounded-circle user" alt="">
-                        <a href="page_3.html"><p class="fw-bold admin">admin</p></a>
+                      <div class="d-flex align-items-center justify-content-start w-50 ">
+                        <i class="fas fa-user fa-2x p-2 rounded-circle border-dark text-dark border"></i>
+                        <!-- <img src="img/user.png" class="img-fluid img-thumbnail rounded-circle user" alt=""> -->
+                        <a href="page_3.html"><p class="fw-bold admin my-auto me-2">admin</p></a>
                       </div>
-                      <p class="d-block d-lg-none"><span class="badge tags" style="background: #fff7e9; border: none;">lorem</span></p>
+                      <p class="d-block d-lg-none"><span class="badge tags rounded-2 shadow-sm" style="background: #fff7e9; border: none;">lorem</span></p>
                     </div>
                     <div class="text-content px-2">
                       <a href="page_2.html"> <p class="lead fw-bold mb-1 lh-base p_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ipsam</p></a>
@@ -232,7 +235,7 @@
                       <div class="info d-flex justify-content-between align-items-center">
                         <p class="">21 September</p>
                         <p class="">5 min read</p>
-                        <p class="d-none d-lg-block"><span class="badge tags">lorem</span></p>
+                        <p class="d-none d-lg-block"><span class="badge tags rounded-2 shadow-sm">lorem</span></p>
                       </div>
                       <div class="icons">
                         <i class="far fa-comment-dots"></i>
@@ -251,23 +254,24 @@
         <!-- posts -->
         <div class="row mb-2 g-2">
           <div class="col-3">
-            <div class="box  h-100"></div>
+            <div class="box  h-100 rounded-2 shadow-sm"></div>
           </div>
           <div class="col-9">
-             <!-- post -->
-             <div class="card ">
-              <div class="card-body p-0">
+            <!-- post -->
+            <div class="card ">
+              <div class="card-body p-0 rounded-2 shadow-sm">
                 <div class="post">
                   <div class="mrak">
                     <i class="fas fa-microphone-alt"></i>
                   </div>
                   <div class="post-content">
                     <div class="auter d-flex align-items-center justify-content-between p-2" style="width: 90%;">
-                      <div class="d-flex align-items-center w-50">
-                        <img src="img/user.png" class="img-fluid img-thumbnail rounded-circle user" alt="">
-                        <a href="page_3.html"><p class="fw-bold admin">admin</p></a>
+                      <div class="d-flex align-items-center justify-content-start w-50 ">
+                        <i class="fas fa-user fa-2x p-2 rounded-circle border-dark text-dark border"></i>
+                        <!-- <img src="img/user.png" class="img-fluid img-thumbnail rounded-circle user" alt=""> -->
+                        <a href="page_3.html"><p class="fw-bold admin my-auto me-2">admin</p></a>
                       </div>
-                      <p class="d-block d-lg-none"><span class="badge tags" style="background: #fff7e9; border: none;">lorem</span></p>
+                      <p class="d-block d-lg-none"><span class="badge tags rounded-2 shadow-sm" style="background: #fff7e9; border: none;">lorem</span></p>
                     </div>
                     <div class="text-content px-2">
                       <a href="page_2.html"> <p class="lead fw-bold mb-1 lh-base p_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ipsam</p></a>
@@ -277,7 +281,7 @@
                       <div class="info d-flex justify-content-between align-items-center">
                         <p class="">21 September</p>
                         <p class="">5 min read</p>
-                        <p class="d-none d-lg-block"><span class="badge tags">lorem</span></p>
+                        <p class="d-none d-lg-block"><span class="badge tags rounded-2 shadow-sm">lorem</span></p>
                       </div>
                       <div class="icons">
                         <i class="far fa-comment-dots"></i>
@@ -293,64 +297,65 @@
           </div>
         </div>
         <!-- posts -->
-      <!-- posts -->
-      <div class="row mb-2 g-2">
-        <div class="col-3">
-          <div class="box  h-100"></div>
-        </div>
-        <div class="col-9">
-           <!-- post -->
-           <div class="card ">
-            <div class="card-body p-0">
-              <div class="post">
-                <div class="mrak">
-                  <i class="fas fa-microphone-alt"></i>
-                </div>
-                <div class="post-content">
-                  <div class="auter d-flex align-items-center justify-content-between p-2" style="width: 90%;">
-                    <div class="d-flex align-items-center w-50">
-                      <img src="img/user.png" class="img-fluid img-thumbnail rounded-circle user" alt="">
-                      <a href="page_3.html"><p class="fw-bold admin">admin</p></a>
-                    </div>
-                    <p class="d-block d-lg-none"><span class="badge tags" style="background: #fff7e9; border: none;">lorem</span></p>
+        <!-- posts -->
+        <div class="row mb-2 g-2">
+          <div class="col-3">
+            <div class="box  h-100 rounded-2 shadow-sm"></div>
+          </div>
+          <div class="col-9">
+            <!-- post -->
+            <div class="card ">
+              <div class="card-body p-0 rounded-2 shadow-sm">
+                <div class="post">
+                  <div class="mrak">
+                    <i class="fas fa-microphone-alt"></i>
                   </div>
-                  <div class="text-content px-2">
-                    <a href="page_2.html"> <p class="lead fw-bold mb-1 lh-base p_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ipsam</p></a>
-                    <p class="d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                  </div>
-                  <div class="info-content ">
-                    <div class="info d-flex justify-content-between align-items-center">
-                      <p class="">21 September</p>
-                      <p class="">5 min read</p>
-                      <p class="d-none d-lg-block"><span class="badge tags">lorem</span></p>
+                  <div class="post-content">
+                    <div class="auter d-flex align-items-center justify-content-between p-2" style="width: 90%;">
+                      <div class="d-flex align-items-center justify-content-start w-50 ">
+                        <i class="fas fa-user fa-2x p-2 rounded-circle border-dark text-dark border"></i>
+                        <!-- <img src="img/user.png" class="img-fluid img-thumbnail rounded-circle user" alt=""> -->
+                        <a href="page_3.html"><p class="fw-bold admin my-auto me-2">admin</p></a>
+                      </div>
+                      <p class="d-block d-lg-none"><span class="badge tags rounded-2 shadow-sm" style="background: #fff7e9; border: none;">lorem</span></p>
                     </div>
-                    <div class="icons">
-                      <i class="far fa-comment-dots"></i>
-                      <i class="fas fa-share-alt"></i>
-                      <i class="far fa-heart"></i>
+                    <div class="text-content px-2">
+                      <a href="page_2.html"> <p class="lead fw-bold mb-1 lh-base p_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ipsam</p></a>
+                      <p class="d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    </div>
+                    <div class="info-content ">
+                      <div class="info d-flex justify-content-between align-items-center">
+                        <p class="">21 September</p>
+                        <p class="">5 min read</p>
+                        <p class="d-none d-lg-block"><span class="badge tags rounded-2 shadow-sm">lorem</span></p>
+                      </div>
+                      <div class="icons">
+                        <i class="far fa-comment-dots"></i>
+                        <i class="fas fa-share-alt"></i>
+                        <i class="far fa-heart"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <!-- post -->
           </div>
-          <!-- post -->
         </div>
-      </div>
-      <!-- posts -->
+        <!-- posts -->
       </div>
        <!-- tags box -->
-       <div class="col-lg-4 col-md-12 mt-2">
+       <div class="col-lg-4 col-md-12 mt-3">
         <div class="title-content mb-2">
           <h2 class="title text-capitalize text-center text-md-end  fw-bold fs-4">tags</h2>
         </div>
-        <div class="boxs mb-2 p-4 h-auto">
-          <span class="badge tags">lorem</span>
-          <span class="badge tags">Lorem ipsum</span>
-          <span class="badge tags">lorem</span>
-          <span class="badge tags">Lorem ipsum </span>
-          <span class="badge tags">Lorem ipsum dolor</span>
-          <span class="badge tags">lorem</span>
+        <div class="boxs mb-2 p-4 h-auto rounded-2 shadow-sm">
+          <span class="badge tags rounded-2 shadow-sm">lorem</span>
+          <span class="badge tags rounded-2 shadow-sm">Lorem ipsum</span>
+          <span class="badge tags rounded-2 shadow-sm">lorem</span>
+          <span class="badge tags rounded-2 shadow-sm">Lorem ipsum </span>
+          <span class="badge tags rounded-2 shadow-sm">Lorem ipsum dolor</span>
+          <span class="badge tags rounded-2 shadow-sm">lorem</span>
         </div>
         <div class="d-none d-lg-block">
           <span class="badge  text-secondary mx-1">حرية</span>
