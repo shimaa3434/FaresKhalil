@@ -286,5 +286,9 @@ a, a:hover{
     .post .mrak::before{
         border-width: 8px;
     }
+     .follow_btn{
+        padding: 5px 10px;
+        font-size: 3vw !important;
+    }
 
 }
