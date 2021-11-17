@@ -222,6 +222,9 @@ a, a:hover{
     border-bottom: 2px solid #ddd;
     border-radius: none;
 }
+.post-content .text-content{
+    width: 95%;
+}
 @media (max-width: 991px){
     .info-content{
         display: flex;
@@ -260,7 +263,13 @@ a, a:hover{
 }
 
 @media (max-width: 490px){
+    .hero .carousel-indicators{
+        bottom: -20% !important;
+    }
     .icons i, .info p{
         font-size: 0.5rem !important;
+    }
+    .hero .carousel-item p{
+        font-size: medium;
     }
 }
