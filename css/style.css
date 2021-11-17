@@ -240,4 +240,9 @@ a, a:hover{
     .hero .carousel-item p{
         font-size: medium;
     }
+    .info-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
