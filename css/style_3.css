@@ -200,11 +200,6 @@ a, a:hover{
 }
 
 @media (max-width: 991px){
-    .info-content{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
     .following .box{
         padding: 20px 10px;
     }
@@ -245,5 +240,8 @@ a, a:hover{
     }
     .icons i, .info p{
         font-size: 0.5rem !important;
+    }
+    .hero .carousel-item p{
+        font-size: medium;
     }
 }
