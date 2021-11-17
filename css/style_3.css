@@ -71,8 +71,12 @@ a, a:hover{
 }
 .hero .hero-box .tags {
     background-color: transparent;
-    border: 1px solid #fff;
+    border: 1px solid #fff7e9;
     color: #fff;
+}
+.hero .hero-box .tags:hover{
+    color: #000;
+    background-color: #fff7e9;
 }
 
 .hero .links .nav .nav-item .nav-link{
@@ -82,8 +86,10 @@ a, a:hover{
     color: var(--bg-color);
 }
 .hero .links .nav .nav-item .nav-link.active{
-    color: #fff;
+    color: #fff !important;
+    text-decoration: underline solid;
 }
+
 /* hero */
 
 /* content */
@@ -167,11 +173,11 @@ a, a:hover{
 
 .info-content .info p{
     font-size: 0.8rem;
-    margin: 0 1rem;
+    margin: 0 1rem ;
 }
 .info-content .icons i{
     font-size: 1rem;
-    margin: 0 0.7rem;
+    margin: 0 0.7rem ;
 }
 /* content */
 .facebook{
@@ -198,12 +204,22 @@ a, a:hover{
     border-bottom: 2px solid #ddd;
     border-radius: none;
 }
+.following .tags{
+    background-color: #fff7e9;
+    border: none;
+}
+
+.post .text-content p{
+    font-size: 1vw;
+}
+
 
 @media (max-width: 991px){
     .following .box{
         padding: 20px 10px;
     }
     .following .tags{
+        
         font-size: 1vw;
     }
 }
@@ -238,10 +254,37 @@ a, a:hover{
     .following .title{
         font-size: 2vw !important;
     }
-    .icons i, .info p{
-        font-size: 0.5rem !important;
-    }
     .hero .carousel-item p{
         font-size: medium;
     }
+    .info-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .icons i, .info p{
+        font-size: 2vw !important;
+        margin: 0  5px !important;
+    }
+    .user{
+        width: 35px;
+        height: 35px;
+        margin-left: 5px;
+    }
+    .admin{
+        font-size: 3vw !important;
+    }
+    .p_text{
+        font-size: 3vw !important;
+    }
+    .post .mrak{
+        left: 0;
+        padding: 5px 5px 15px 5px;
+        width: 15px;
+        font-size: 6px;
+    }
+    .post .mrak::before{
+        border-width: 8px;
+    }
+
 }
