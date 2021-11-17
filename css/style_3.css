@@ -290,5 +290,9 @@ a, a:hover{
         padding: 5px 10px;
         font-size: 3vw !important;
     }
+     .hero .links .nav .nav-item .nav-link{
+        font-size: 15px;
+    }
+
 
 }
