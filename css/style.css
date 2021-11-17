@@ -155,7 +155,7 @@ a, a:hover{
 
 .info-content .info p{
     font-size: 0.8rem;
-    margin: 0 1rem;
+    margin: 0 1rem ;
 }
 .info-content .icons i{
     font-size: 1rem;
@@ -216,7 +216,7 @@ a, a:hover{
 @media (max-width: 768px){
     .hero .carousel-indicators{
         bottom: -40% !important;
-    }
+    } 
     .text-content p{
         font-size: .8rem;
     }
@@ -235,14 +235,30 @@ a, a:hover{
         bottom: -20% !important;
     }
     .icons i, .info p{
-        font-size: 0.5rem !important;
+        font-size: 2vw !important;
+        margin: 0  5px !important;
     }
     .hero .carousel-item p{
         font-size: medium;
     }
-    .info-content{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    .user{
+        width: 35px;
+        height: 35px;
+        margin-left: 5px;
+    }
+    .admin{
+        font-size: 3vw !important;
+    }
+    .p_text{
+        font-size: 3vw !important;
+    }
+    .post .mrak{
+        left: 0;
+        padding: 5px 5px 15px 5px;
+        width: 15px;
+        font-size: 6px;
+    }
+    .post .mrak::before{
+        border-width: 8px;
     }
 }
