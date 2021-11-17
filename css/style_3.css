@@ -219,8 +219,10 @@ a, a:hover{
         padding: 20px 10px;
     }
     .following .tags{
-        
         font-size: 1vw;
+    }
+    .p_text{
+        font-size: 2vw !important;
     }
 }
 
@@ -286,13 +288,18 @@ a, a:hover{
     .post .mrak::before{
         border-width: 8px;
     }
-     .follow_btn{
+    .follow_btn{
         padding: 5px 10px;
         font-size: 3vw !important;
     }
-     .hero .links .nav .nav-item .nav-link{
+    .post-content .tags{
+        font-size: 2vw;
+    }
+    .auter .fa-user, .following .fa-user{
+        font-size: 2vw;
+    }
+    .hero .links .nav .nav-item .nav-link{
         font-size: 15px;
     }
-
 
 }
